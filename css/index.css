@@ -215,6 +215,12 @@ img {
   color: #212529;
   text-decoration: none;
 }
+.main-navigation .nav-container .nav .hover {
+  font-size: 2rem;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
