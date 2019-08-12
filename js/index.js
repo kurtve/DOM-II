@@ -29,3 +29,11 @@ paraList.forEach(element => {
 	});
 });
 
+
+// apply these to the whole document...
+
+// log every key press the user makes
+document.addEventListener('keydown', event => {
+	console.log(`You pressed: ${event.key}`);
+});
+
