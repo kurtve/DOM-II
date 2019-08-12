@@ -18,3 +18,14 @@ navList.forEach(element => {
 	element.addEventListener('mouseleave', navLeave);
 });
 
+
+// how about if we click on a paragraph, it changes to zapf-dingbats and back
+// not sure about correct font family name to use for Zapf, though
+const paraList = document.querySelectorAll('p');
+
+paraList.forEach(element => {
+	element.addEventListener('click', event => {
+		event.target.classList.toggle('zap');
+	});
+});
+
