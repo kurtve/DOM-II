@@ -37,3 +37,22 @@ document.addEventListener('keydown', event => {
 	console.log(`You pressed: ${event.key}`);
 });
 
+
+// complain if the user double-clicks on the page
+document.addEventListener('dblclick', event => {
+	alert(`Ouch! ${event.target} says stop clicking on me!`);
+});
+
+
+// let's make the scroll-bar do something freaky
+// randomly change the color as we scroll on the page
+const html = document.querySelector('html');
+
+window.addEventListener('scroll', event => {
+	let red = Math.floor(Math.random()*256);
+	let green = Math.floor(Math.random()*256);
+	let blue = Math.floor(Math.random()*256);
+	html.style.backgroundColor = `rgb(${red},${green},${blue})`;
+});
+
+
